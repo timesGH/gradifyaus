@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ccff, #33ff00);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.app-logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff; /* White border */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.app-logo:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.bold-text {
+  font-weight: bold;
+  color: #fff; /* White text color */
+  margin-top: 20px;
+  font-size: 28px; /* Larger font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+/* Animated gradient background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
